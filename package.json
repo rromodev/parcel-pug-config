@@ -6,11 +6,16 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build index.html",
-    "start": "parcel -p 1236 --hmr-port 1237 --log-level verbose  src/index.pug"
+    "dev:live-server" : "live-server dist/index.html",
+    "dev:parcel" : "parcel serve --no-cache src/index.pug",
+    "start": "run-p dev:*"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "parcel": "latest",
     "pug": "^2.0.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
