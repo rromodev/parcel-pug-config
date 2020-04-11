@@ -1,0 +1,16 @@
+{
+  "name": "parcel-pug-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Raul Romo <rromomxdev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build index.html",
+    "start": "parcel -p 1236 --hmr-port 1237 --log-level verbose  src/index.pug"
+  },
+  "devDependencies": {
+    "parcel": "latest",
+    "pug": "^2.0.4"
+  },
+  "dependencies": {}
+}
